@@ -1,0 +1,42 @@
+$blue: rgb(17, 93, 140);
+$red: #983636;
+$grey: #D4D4D4;
+$white: #fff;
+$dark-blue: #0a2e45;
+$black: #131313;
+
+
+$fs-content: 1.6rem;
+$fs-h2: 2.5rem;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $black;
+  font-size: $fs-content;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: $fs-h2;
+  margin-bottom: 1em;
+}
