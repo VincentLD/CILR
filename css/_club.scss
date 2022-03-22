@@ -1,0 +1,245 @@
+.club {
+
+  h2 {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto 2em auto;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      width: 35%;
+      height: 2px;
+      background-color: $red;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .club__header {
+    position: relative;
+    height: 60vh;
+    margin-bottom: 3em;
+
+    .header__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -10;
+      opacity: .2;
+    }
+
+    .container {
+      @include flex-center;
+      height: 100%;
+      flex-direction: column;
+      width: 80%;
+      margin: auto;
+
+      .header__title {
+        margin-bottom: 2em;
+        text-align: center;
+      }
+    }
+  }
+
+  .historique {
+    margin-bottom: 2em;
+
+    .wrapper {
+      h2 {
+        text-align: center;
+      }
+      .container {
+        .historique__bg {
+          max-width: 600px;
+          margin: 0 auto 2em auto;
+          display: block;
+
+        }
+        .historique__content {
+          margin-bottom: 1em;
+        }
+      }
+    }
+  }
+
+  .ca {
+    background-color: $red;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+
+    .ca__title {
+      color: $white;
+      text-align: center;
+      padding-top: 1em;
+
+      &::after {
+        background-color: $white;
+      }
+    }
+
+    .cards__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 1em;
+
+      .card {
+        border-radius: 20px;
+        width: 45%;
+        min-height: 200px;
+        max-width: 365px;
+        margin-bottom: 70px;
+
+        .card__header {
+          background-color: $white;
+          height: 35%;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+        }
+  
+        .card__content {
+          background: linear-gradient(180deg, rgba(52, 11, 11, 0) 0%, #711A1A 100%);
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          position: relative;
+          height: 100%;
+  
+          img {
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%, 25%);
+            display: block;
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            border: 6px solid $white;
+          }
+  
+          .wrapper {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-bottom: 1.5em;
+            
+            .card__name, .card__description {
+              color: $white;
+              text-align: center;
+            }
+            .card__name {
+              text-transform: uppercase;
+              font-size: 2rem;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .enjeux {
+    margin-bottom: 2em;
+
+    h2 {
+      text-align: center;
+    }
+
+    
+    .single {
+      h3 {
+        margin-bottom: 1em;
+      }
+
+      p {
+        margin-bottom: 1em;
+      }
+
+      img {
+      max-height: 470px;
+      max-width: 570px;
+      display: block;
+        margin: 0 auto 1em auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .club {
+    .club__header {
+      display: flex;
+      align-items: center;
+      
+      .header__img {
+        opacity: unset;
+      }
+
+      .wrapper {
+        display: flex;
+        justify-content: flex-start;
+
+        .container {
+          color: $black;
+          background-color: $white;
+          height: unset;
+          width: 50%;
+          margin: unset;
+          padding: 2em;
+
+          .header__title {
+            margin-bottom: 1em;
+          }
+        }
+      }
+    }
+    .enjeux {
+      .single {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5em;
+        align-items: center;
+
+        img, .container {
+          width: 45%;
+        }
+
+        .container {
+          h3 {
+            margin-bottom: .6em;
+          }
+        }
+      }
+
+      .single:last-child{
+        img {
+          order: 2;
+        }
+      }
+    }
+   
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .club {
+    .historique {
+      .container {
+        display: flex;
+        gap: 2em;
+        align-items: center;
+
+        .historique__bg {
+          order: 2;
+        }
+
+        .content-wrapper {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

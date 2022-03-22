@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/0045004211.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<title>Le club</title>
+	</head>
+	<body>
+		<div class="contact">
+			<header>
+				<h2>Contact</h2>
+				<img src="./img/la-rochelle.jpg" alt="" />
+			</header>
+
+			<div class="wrapper contact__wrapper">
+				<div class="contact__left">
+					<h3>Vous souhaitez nous rejoindre ?</h3>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+						sequi culpa totam, saepe deleniti distinctio at iusto tempore minus
+						adipisci neque praesentium necessitatibus reprehenderit nam, eum
+						cumque rerum quibusdam. Molestiae nesciunt voluptas excepturi
+						voluptatibus impedit. Assumenda architecto eos molestiae vero!
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus,
+						molestias. Officiis impedit assumenda, corrupti dolore non quis quos
+						voluptate perspiciatis.
+					</p>
+					<a href="">Charte du club <i class="fa-solid fa-download"></i></a>
+				</div>
+
+				<div class="contact__right">
+					<h3>Nous trouver</h3>
+					<div class="right__coordonnees">
+						<p>
+							<i class="fa-solid fa-location-dot"></i>4 rue Réaumur, 17000 La
+							Rochelle
+						</p>
+						<p>
+							<i class="fa-solid fa-envelope"></i
+							>secretaire.general@club-international-la-rochelle.fr
+						</p>
+						<p><i class="fa-solid fa-phone"></i>+33 (0)5 46 41 94 21</p>
+					</div>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2763.5438866641707!2d-1.1582381840596498!3d46.1598279791154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480153a422e2b6e9%3A0x5f574896598802fb!2s4%20Rue%20R%C3%A9aumur%2C%2017000%20La%20Rochelle!5e0!3m2!1sfr!2sfr!4v1647869486016!5m2!1sfr!2sfr"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+					></iframe>
+				</div>
+			</div>
+
+			<section class="form">
+				<div class="wrapper">
+					<img src="./img/jardin-club.jpg" alt="" />
+					<form action="">
+						<h3>Candidater</h3>
+						<h4>Votre profil</h4>
+						<div class="row">
+							<div class="form__group">
+								<label for="firstname">Prénom</label>
+								<input
+									class="input"
+									type="text"
+									id="firstname"
+									name="firstname"
+									value=""
+								/>
+							</div>
+							<div class="form__group">
+								<label for="lastname">Nom</label>
+								<input
+									class="input"
+									type="text"
+									id="lastname"
+									name="lastname"
+									value=""
+								/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form__group">
+								<label for="email">Email</label>
+								<input
+									class="input"
+									type="email"
+									id="email"
+									name="email"
+									value=""
+								/>
+							</div>
+							<div class="form__group">
+								<label for="phone">Téléphone</label>
+								<input
+									class="input"
+									type="text"
+									id="phone"
+									name="phone"
+									value=""
+								/>
+							</div>
+						</div>
+						<div class="row--radio">
+							<div class="form__group--radio">
+								<label for="homme">Homme</label>
+								<input type="radio" id="homme" name="genre" value="homme" />
+							</div>
+							<div class="form__group--radio">
+								<label for="femme">Femme</label>
+								<input type="radio" id="femme" name="genre" value="femme" />
+							</div>
+						</div>
+						<h4>Parrainage n°1</h4>
+						<div class="row">
+							<div class="form__group">
+								<label for="lastname">Nom</label>
+								<input
+									class="input"
+									type="text"
+									id="lastname"
+									name="lastname"
+								/>
+							</div>
+							<div class="form__group">
+								<label for="email">Email</label>
+								<input class="input" type="email" id="email" name="email" />
+							</div>
+						</div>
+						<h4>Parrainage n°2</h4>
+						<div class="row">
+							<div class="form__group">
+								<label for="lastname">Nom</label>
+								<input
+									class="input"
+									type="text"
+									id="lastname"
+									name="lastname"
+								/>
+							</div>
+							<div class="form__group">
+								<label for="email">Email</label>
+								<input class="input" type="email" id="email" name="email" />
+							</div>
+						</div>
+						<h4>Importez vos documents</h4>
+						<div class="row--file">
+							<div class="form__group--file">
+								<div class="labelOutput">
+									<div class="container">
+										<label class="labelfile" for="cvInput"
+											><i class="fa-solid fa-file-arrow-up"></i>Curriculum
+											Vitae</label
+										>
+										<span class="cross cvCross"
+											><i class="fa-solid fa-xmark"></i
+										></span>
+									</div>
+									<span class="cvOutput output">Aucun fichier sélectionné</span>
+								</div>
+								<input id="cvInput" type="file" name="file" class="inputfile" />
+							</div>
+						</div>
+						<div class="row--file">
+							<div class="form__group--file">
+								<div class="labelOutput">
+									<div class="container">
+										<label class="labelfile" for="charteInput"
+											><i class="fa-solid fa-file-signature"></i>Charte
+											signée</label
+										>
+										<span class="cross charteCross"
+											><i class="fa-solid fa-xmark"></i
+										></span>
+									</div>
+									<span class="charteOutput output"
+										>Aucun fichier sélectionné</span
+									>
+								</div>
+								<input
+									id="charteInput"
+									type="file"
+									name="file"
+									class="inputfile"
+								/>
+							</div>
+						</div>
+						<p>
+							En transmettant les informations demandées, vous acceptez notre
+							politique de confidentialité.
+						</p>
+						<button type="submit">Envoyer <i class="fa-solid fa-paper-plane"></i></button>
+					</form>
+				</div>
+			</section>
+		</div>
+		<script src="./js/contact.js"></script>
+	</body>
+</html>
