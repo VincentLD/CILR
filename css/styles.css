@@ -481,9 +481,10 @@ h2 {
 .actu .tabnav ul {
   display: flex;
   height: 100%;
+  justify-content: center;
 }
 .actu .tabnav ul .tabnav__li {
-  width: 25%;
+  width: 30vw;
   color: #fff;
   font-size: clamp(1.4rem, 2.5vw, 2rem);
   cursor: pointer;
@@ -1183,6 +1184,126 @@ h2 {
   transition: all 0.2s ease;
 }
 .connexion .wrapper form .form__group button:hover {
+  color: #115d8c;
+  background-color: #fff;
+  border-color: #115d8c;
+}
+
+.espace-membre header {
+  background-color: #389FC1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  color: #fff;
+  position: relative;
+  margin-bottom: 3em;
+}
+.espace-membre header img {
+  position: absolute;
+  opacity: 0.3;
+  pointer-events: none;
+}
+.espace-membre .wrapper {
+  position: relative;
+}
+.espace-membre .wrapper h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  position: relative;
+  width: fit-content;
+  margin-bottom: 2em;
+  color: #115d8c;
+  margin: 0 auto 2em auto;
+}
+.espace-membre .wrapper h3::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #115d8c;
+}
+.espace-membre .wrapper .membre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 4em;
+}
+.espace-membre .wrapper .membre .left {
+  border-radius: 50%;
+}
+.espace-membre .wrapper .membre .left img {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+.espace-membre .wrapper .membre .right {
+  display: flex;
+  flex-direction: column;
+}
+.espace-membre .wrapper .membre .right p, .espace-membre .wrapper .membre .right .profil {
+  margin-bottom: 0.5em;
+}
+.espace-membre .wrapper .membre .right .profil {
+  background-color: #115d8c;
+  padding: 0.3em 0.5em;
+  border-radius: 4px;
+  width: fit-content;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+.espace-membre .wrapper .membre .right .profil i {
+  padding-left: 0.5em;
+  transition: all 0.2s ease;
+}
+.espace-membre .wrapper .membre .right .profil:hover {
+  background-color: #fff;
+  border-color: #115d8c;
+  color: #115d8c;
+}
+.espace-membre .wrapper .membre .right .profil:hover i {
+  color: #115d8c;
+}
+.espace-membre .wrapper .membre .right .deconnexion {
+  color: #131313;
+}
+.espace-membre .wrapper .membre .right .deconnexion i {
+  padding-left: 0.5em;
+}
+.espace-membre .wrapper ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  justify-content: center;
+  max-width: 600px;
+  margin: auto;
+}
+.espace-membre .wrapper ul li {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.espace-membre .wrapper ul li a {
+  background-color: #115d8c;
+  padding: 1em;
+  height: 100%;
+  width: 100%;
+  display: block;
+  text-align: center;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+.espace-membre .wrapper ul li a i {
+  display: block;
+  text-align: center;
+  margin-bottom: 0.3em;
+  transition: all 0.2s ease;
+}
+.espace-membre .wrapper ul li a:hover {
   color: #115d8c;
   background-color: #fff;
   border-color: #115d8c;
