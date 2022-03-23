@@ -1,50 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<script
-			src="https://kit.fontawesome.com/0045004211.js"
-			crossorigin="anonymous"
-		></script>
-		<link rel="stylesheet" href="./css/styles.css" />
-		<title>Le club</title>
-	</head>
-	<body>
-		<div class="espace-membre">
-			<header>
-				<h2>Espace membre</h2>
-				<img src="./img/la-rochelle.jpg" alt="" />
-			</header>
-
-			<div class="wrapper">
-        <h3>Mon espace</h3>
-        <div class="membre">
-          <div class="left">
-            <img src="https://place-hold.it/75x75" alt="">
-          </div>
-          <div class="right">
-            <p>Bonjour John</p>
-            <a class="profil" href="">Mon espace<i class="fa-solid fa-house"></i></a>
-            <a class="deconnexion" href="">Se déconnecter<i class="fa-solid fa-arrow-right-from-bracket"></i></a>
-          </div>
-        </div>
-      
-        <ul>
-          <li><a href=""><i class="fa-solid fa-user"></i>Mon profil</a></li>
-          <li><a href=""><i class="fa-solid fa-calendar"></i>Évènements</a></li>
-          <li><a href=""><i class="fa-solid fa-diagram-project"></i>Projets</a></li>
-          <li><a href=""><i class="fa-solid fa-file-lines"></i>Publications</a></li>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/0045004211.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Document</title>
+</head>
+<body>
+    <div class="espace-membre">
+      <header>
+        <h2 class="h2-topSection">Mon espace personnel</h2>
+      </header>
+      <div class="tabnav">
+        <ul class="tabnav__ul">
+          <li class="tabnav__li" data-index="0">
+            <div>
+              <i class="fa-solid fa-user"></i>
+              <p>Mon profil</p>
+            </div>
+          </li>
+          <li class="tabnav__li" data-index="1">
+            <div>
+              <i class="fa-solid fa-file-lines"></i>
+              <p>Mes publications</p>
+            </div>
+          </li>
+          <li class="tabnav__li" data-index="2">
+            <div>
+              <i class="fa-solid fa-diagram-project"></i>
+              <p>Mes projets</p>
+            </div>
+          </li>
+          <li class="tabnav__li" data-index="3">
+            <div>
+              <i class="fa-solid fa-calendar"></i>
+              <p>Mes évènements</p>
+            </div>
+          </li>
         </ul>
-        
       </div>
-		</div>
-	</body>
+      <main class="wrapper">
+				<div class="actu__content actu__content--active" data-index="0">
+					
+				</div>
+        <div class="actu__content" data-index="1">
+          <!-- Tout afficher -->
+          <figure>
+            <!-- lien -->
+            <a href="">
+              <!-- img -->
+              <img src="./img/projet-1.jpg" alt="">
+              <figcaption>
+                <div>
+                  <!-- titre -->
+                  <span>Lorem Ipsum</span>
+                  <!-- icon (à modifier selon le type) -->
+                  <i class="fa-solid fa-file-lines"></i>
+                </div>
+              </figcaption>
+            </a>
+          </figure>
+          <figure>
+            <!-- lien -->
+            <a href="">
+              <!-- img -->
+              <img src="./img/projet-1.jpg" alt="">
+              <figcaption>
+                <div>
+                  <!-- titre -->
+                  <span>Lorem Ipsum</span>
+                  <!-- icon (à modifier selon le type) -->
+                  <i class="fa-solid fa-file-lines"></i>
+                </div>
+              </figcaption>
+            </a>
+          </figure>
+          <figure>
+            <!-- lien -->
+            <a href="">
+              <!-- img -->
+              <img src="./img/projet-1.jpg" alt="">
+              <figcaption>
+                <div>
+                  <!-- titre -->
+                  <span>Lorem Ipsum</span>
+                  <!-- icon (à modifier selon le type) -->
+                  <i class="fa-solid fa-file-lines"></i>
+                </div>
+              </figcaption>
+            </a>
+          </figure>
+          <figure>
+            <!-- lien -->
+            <a href="">
+              <!-- img -->
+              <img src="./img/projet-1.jpg" alt="">
+              <figcaption>
+                <div>
+                  <!-- titre -->
+                  <span>Lorem Ipsum</span>
+                  <!-- icon (à modifier selon le type) -->
+                  <i class="fa-solid fa-file-lines"></i>
+                </div>
+              </figcaption>
+            </a>
+          </figure>
+          <figure>
+            <!-- lien -->
+            <a href="">
+              <!-- img -->
+              <img src="https://place-hold.it/300x500" alt="">
+              <figcaption>
+                <div>
+                  <!-- titre -->
+                  <span>Lorem Ipsum</span>
+                  <!-- icon (à modifier selon le type) -->
+                  <i class="fa-solid fa-file-lines"></i>
+                </div>
+              </figcaption>
+            </a>
+          </figure>
+        </div>
+        <div class="actu__content" data-index="2">
+          <!-- Afficher les publications -->
+          <figure>
+            <!-- lien -->
+            <a href="">
+              <!-- img -->
+              <img src="./img/projet-2.jpg" alt="">
+              <figcaption>
+                <div>
+                  <!-- titre -->
+                  <span>Lorem Ipsum</span>
+                  <!-- icon (à modifier selon le type) -->
+                  <i class="fa-solid fa-file-lines"></i>
+                </div>
+              </figcaption>
+            </a>
+          </figure>
+        </div>
+        <div class="actu__content" data-index="3">
+          <!-- Afficher les projets -->
+          <figure>
+            <!-- lien -->
+            <a href="">
+              <!-- img -->
+              <img src="./img/projet-3.jpg" alt="">
+              <figcaption>
+                <div>
+                  <!-- titre -->
+                  <span>Lorem Ipsum</span>
+                  <!-- icon (à modifier selon le type) -->
+                  <i class="fa-solid fa-file-lines"></i>
+                </div>
+              </figcaption>
+            </a>
+          </figure>
+        </div>
+      </main>
+    </div>
+    <script src="./js/actualite.js"></script>
+  </body>
 </html>

@@ -2,133 +2,111 @@
 	header {
 		background-color: $light-blue;
 		@include flex-center;
-		height: 20vh;
+		height: 15vh;
 		color: $white;
-		position: relative;
-		margin-bottom: 3em;
-
-		img {
-			position: absolute;
-			opacity: 0.3;
-			pointer-events: none;
-		}
 	}
 
-  .wrapper  {
-    position: relative;
+	.tabnav {
+		background-color: $blue;
+		height: 10vh;
+		margin-bottom: 2em;
 
-    h3 {
-      text-align: center;
-      font-size: 2.5rem;
-      position: relative;
-      width: fit-content;
-      margin-bottom: 2em;
-      color: $blue;
-      margin: 0 auto 2em auto;
+		ul {
+			display: flex;
+			height: 100%;
+			justify-content: center;
+			
+			.tabnav__li {
+				width: 30vw;
+				color: $white;
+				font-size: clamp(1.4rem, 2.5vw, 2rem);
+				cursor: pointer;
 
-      &::after {  
-        content: '';
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: $blue;
-      }
-    }
+				div {
+					@include flex-center;
+					flex-direction: column;
+					height: 100%;
 
-    .membre {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: .5em;
-      margin-bottom: 4em;
+					i {
+						margin-bottom: 0.5em;
+					}
+				}
 
-      .left {
-        border-radius: 50%;
+				&--active {
+					color: $blue;
+					background-color: $white;
+					border-top-left-radius: 10px;
+					border-top-right-radius: 10px;
+				}
+			}
+		}
+	}
+	main {
+		margin-bottom: 2em;
 
-        img {
-          border-radius: 50%;
-          height: 75px;
-          width: 75px;
-        }
-      }
+		.actu__content {
+			display: none;
 
-      .right {
-        display: flex;
-        flex-direction: column;
+			&--active {
+				display: flex;
+				flex-wrap: wrap;
+				width: 90%;
+				margin: auto;
+				justify-content: space-evenly;
+				gap: 1em;
 
-        p, .profil { margin-bottom: .5em;}
+				figure {
+					width: 45%;
+          height: 220px;
+					max-width: 300px;
+					transform: scale(1);
+					transition: all 0.2s ease;
+					margin-bottom: 3em;
+					
+					&:hover {
+						transform: scale(1.05);
+					}
 
-        .profil {
-          background-color: $blue;
-          padding: .3em .5em;
-          border-radius: 4px;
-          width: fit-content;
-          transition: all .2s ease;
-          border: 1px solid transparent;
+					img {
+						zoom: 100%;
+						transition: all 0.2s ease;
+					}
 
-          i {
-            padding-left: .5em;
-            transition: all .2s ease;
-          }
+					figcaption {
+						background-color: $blue;
+						color: $white;
+						font-size: 1.5rem;
+						padding: 1em;
+						position: relative;
+						top: -10px;
+						width: 100%;
 
-          &:hover {
-            background-color: $white;
-            border-color: $blue;
-            color: $blue;
+						div {
+							display: flex;
+							justify-content: space-between;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
-            i {
-              color: $blue;
-            }
-          }
-        }
+@media screen and (min-width: 810px) {
+	.actu {
+		.tabnav {
+			ul {
+				.tabnav__li {
+					div {
+						flex-direction: row;
 
-        .deconnexion {
-          color: $black;
-          i {
-            padding-left: .5em;
-          }
-        }
-      }
-    }
-
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      gap: .5em;
-      justify-content: center;
-      max-width: 600px;
-      margin: auto;
-
-      li {
-        width: 48%;
-        @include flex-center;
-        
-        a {
-          background-color: $blue;
-          padding: 1em;
-          height: 100%;
-          width: 100%;
-          display: block;
-          text-align: center;
-          transition: all .2s ease;
-          border: 1px solid transparent;
-
-          i {
-            display: block;
-            text-align: center;
-            margin-bottom: .3em;
-            transition: all .2s ease;
-          }
-
-          &:hover {
-            color: $blue;
-            background-color: $white;
-            border-color: $blue;
-          }
-        }
-      }
-    }
-  }
+						i {
+							margin-bottom: unset;
+							margin-right: 0.5em;
+						}
+					}
+				}
+			}
+		}
+	}
 }
