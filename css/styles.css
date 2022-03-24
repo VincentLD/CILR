@@ -52,16 +52,6 @@ p {
   line-height: 22px;
 }
 
-.block {
-  display: block;
-}
-
-.wrapper {
-  width: 90%;
-  max-width: 1440px;
-  margin: auto;
-}
-
 .nav {
   position: sticky;
   top: 0;
@@ -1458,6 +1448,8 @@ p {
   transition: all 0.3s ease;
   width: fit-content;
   margin: auto;
+  justify-content: space-evenly;
+  gap: 1em;
 }
 .form-profil .wrapper .profil-pic .profil-label {
   cursor: pointer;

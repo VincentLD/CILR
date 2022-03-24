@@ -1,6 +1,7 @@
 const cvInput = document.querySelector('#cvInput');
 const cvOutput = document.querySelector('.cvOutput');
 const cvDelete = document.querySelector('.cvCross');
+
 const charteInput = document.querySelector('#charteInput');
 const charteOutput = document.querySelector('.charteOutput');
 const charteDelete = document.querySelector('.charteCross');
