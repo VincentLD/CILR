@@ -1,5 +1,9 @@
 @use 'utils';
 
+.body--active {
+  overflow-y: hidden;
+}
+
 .header {
   position: relative;
   height: 50vh;
@@ -9,7 +13,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(17, 93, 140, .85);
+    background-color: rgba(17, 93, 140, .85);
     color: $white;
     padding: 2em;
     width: 60%;

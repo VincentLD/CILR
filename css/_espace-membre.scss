@@ -21,6 +21,7 @@
 				color: $white;
 				font-size: clamp(1.4rem, 2.5vw, 2rem);
 				cursor: pointer;
+				text-align: center;
 
 				div {
 					@include flex-center;
@@ -54,6 +55,76 @@
 				margin: auto;
 				justify-content: space-evenly;
 				gap: 1em;
+
+				.card {
+					box-shadow: 0px 4px 4px #EFEFEF;
+					background-color: #FBFBFB;
+					border-radius: 12px;
+					max-width: 715px;
+
+					.card__header {
+						background-color: #702020;
+						border-radius: 12px 12px 0px 0px;
+						position: relative;
+						@include flex-vertical-center;
+
+						img {
+							position: absolute;
+							height: 20vw;
+							width: 20vw;
+							max-width: 130px;
+							max-height: 130px;
+							left: 1em;
+							top: -1em;
+							border-radius: 50%;
+							border: 2px solid #702020;
+						}
+
+						.header__denomination {
+							position: relative;
+							right: 20%;
+							transform: translateX(50%);
+
+							.header__name {
+								width: unset;
+								color: rgba(255, 255, 255, 0.7);
+								font-size: clamp(2.5rem, 5vw, 5rem);
+								margin: unset;
+
+								&::after {
+									display: none;
+								}
+							}
+							.header__rank {
+								font-size: clamp(1.5rem, 3vw, 2rem);
+							}
+						}
+					}
+
+					.card__content {
+						padding: 1.5em;
+
+						.group {
+							margin-bottom: 1.5em;
+							h4 {
+								margin-bottom: .3em;
+								color: $blue;
+							}
+						}
+
+						.contact {
+							.contact__group {
+								display: flex;
+								margin-bottom: .5em;
+								i {
+									margin-right: .5em;
+									color: $blue;
+									font-size: 2rem;
+								}
+							}
+						}
+					}
+				}
 
 				figure {
 					width: 45%;
@@ -93,7 +164,7 @@
 }
 
 @media screen and (min-width: 810px) {
-	.actu {
+	.espace-membre {
 		.tabnav {
 			ul {
 				.tabnav__li {
@@ -103,6 +174,23 @@
 						i {
 							margin-bottom: unset;
 							margin-right: 0.5em;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	main {
+		.actu__content {
+			&--active {
+				.card {
+					.card__content {
+						padding-top: 2em;
+						display: flex;
+						justify-content: space-between;
+						.card__left, .card__right {
+							width: 45%;
 						}
 					}
 				}

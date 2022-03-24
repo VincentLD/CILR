@@ -1,166 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/0045004211.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./css/styles.css">
-  <title>Document</title>
-</head>
-<body>
-    <div class="espace-membre">
-      <header>
-        <h2 class="h2-topSection">Mon espace personnel</h2>
-      </header>
-      <div class="tabnav">
-        <ul class="tabnav__ul">
-          <li class="tabnav__li" data-index="0">
-            <div>
-              <i class="fa-solid fa-user"></i>
-              <p>Mon profil</p>
-            </div>
-          </li>
-          <li class="tabnav__li" data-index="1">
-            <div>
-              <i class="fa-solid fa-file-lines"></i>
-              <p>Mes publications</p>
-            </div>
-          </li>
-          <li class="tabnav__li" data-index="2">
-            <div>
-              <i class="fa-solid fa-diagram-project"></i>
-              <p>Mes projets</p>
-            </div>
-          </li>
-          <li class="tabnav__li" data-index="3">
-            <div>
-              <i class="fa-solid fa-calendar"></i>
-              <p>Mes évènements</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <main class="wrapper">
-				<div class="actu__content actu__content--active" data-index="0">
-					
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/0045004211.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="espace-membre">
+			<header>
+				<h2 class="h2-topSection">Mon espace personnel</h2>
+			</header>
+			<div class="tabnav">
+				<ul class="tabnav__ul">
+					<li class="tabnav__li" data-index="0">
+						<div>
+							<i class="fa-solid fa-user"></i>
+							<p>Mon profil</p>
+						</div>
+					</li>
+					<li class="tabnav__li" data-index="1">
+						<div>
+							<i class="fa-solid fa-file-lines"></i>
+							<p>Mes publications</p>
+						</div>
+					</li>
+					<li class="tabnav__li" data-index="2">
+						<div>
+							<i class="fa-solid fa-diagram-project"></i>
+							<p>Mes projets</p>
+						</div>
+					</li>
+					<li class="tabnav__li" data-index="3">
+						<div>
+							<i class="fa-solid fa-calendar"></i>
+							<p>Mes évènements</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<main class="wrapper">
+				<div
+					class="actu__content actu__content--active"
+					data-index="0"
+				>
+				<div class="card">
+					<header class="card__header">
+						<img src="https://www.place-hold.it/150x150" alt="">
+						<div class="header__denomination">
+							<h3 class="header__name">John Smith</h3>
+							<p class="header__rank">Trésorier</p>
+						</div>
+					</header>
+					<div class="card__content">
+						<div class="card__left">
+							<div class="group">
+								<h4>Secteur d'activité</h4>
+								<p>Conseiller bancaire</p>
+							</div>
+							<div class="group">
+								<h4>Pays d'influence</h4>
+								<p>France, Allemagne, Maroc, Japon</p>
+							</div>
+							<div class="group">
+								<h4>Pays d'experience</h4>
+								<p>France, Allemagne, Japon</p>
+							</div>
+							<div class="group">
+								<h4>Langues parlées</h4>
+								<p>Français, Allemand, Turc, Japonais</p>
+							</div>
+						</div>
+						<div class="card__right">
+							<div class="group">
+								<h4>À propos de John</h4>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet totam eligendi ea, dignissimos cum placeat veniam iste voluptas. Dolorum, quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, magnam?</p>
+							</div>
+							<div class="contact">
+								<div class="contact__group">
+									<i class="fa-solid fa-square-phone"></i>
+									<p>01 23 45 67 89</p>
+								</div>
+								<div class="contact__group">
+									<i class="fa-solid fa-at"></i>
+									<p>test@example.com</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-        <div class="actu__content" data-index="1">
-          <!-- Tout afficher -->
-          <figure>
-            <!-- lien -->
-            <a href="">
-              <!-- img -->
-              <img src="./img/projet-1.jpg" alt="">
-              <figcaption>
-                <div>
-                  <!-- titre -->
-                  <span>Lorem Ipsum</span>
-                  <!-- icon (à modifier selon le type) -->
-                  <i class="fa-solid fa-file-lines"></i>
-                </div>
-              </figcaption>
-            </a>
-          </figure>
-          <figure>
-            <!-- lien -->
-            <a href="">
-              <!-- img -->
-              <img src="./img/projet-1.jpg" alt="">
-              <figcaption>
-                <div>
-                  <!-- titre -->
-                  <span>Lorem Ipsum</span>
-                  <!-- icon (à modifier selon le type) -->
-                  <i class="fa-solid fa-file-lines"></i>
-                </div>
-              </figcaption>
-            </a>
-          </figure>
-          <figure>
-            <!-- lien -->
-            <a href="">
-              <!-- img -->
-              <img src="./img/projet-1.jpg" alt="">
-              <figcaption>
-                <div>
-                  <!-- titre -->
-                  <span>Lorem Ipsum</span>
-                  <!-- icon (à modifier selon le type) -->
-                  <i class="fa-solid fa-file-lines"></i>
-                </div>
-              </figcaption>
-            </a>
-          </figure>
-          <figure>
-            <!-- lien -->
-            <a href="">
-              <!-- img -->
-              <img src="./img/projet-1.jpg" alt="">
-              <figcaption>
-                <div>
-                  <!-- titre -->
-                  <span>Lorem Ipsum</span>
-                  <!-- icon (à modifier selon le type) -->
-                  <i class="fa-solid fa-file-lines"></i>
-                </div>
-              </figcaption>
-            </a>
-          </figure>
-          <figure>
-            <!-- lien -->
-            <a href="">
-              <!-- img -->
-              <img src="https://place-hold.it/300x500" alt="">
-              <figcaption>
-                <div>
-                  <!-- titre -->
-                  <span>Lorem Ipsum</span>
-                  <!-- icon (à modifier selon le type) -->
-                  <i class="fa-solid fa-file-lines"></i>
-                </div>
-              </figcaption>
-            </a>
-          </figure>
-        </div>
-        <div class="actu__content" data-index="2">
-          <!-- Afficher les publications -->
-          <figure>
-            <!-- lien -->
-            <a href="">
-              <!-- img -->
-              <img src="./img/projet-2.jpg" alt="">
-              <figcaption>
-                <div>
-                  <!-- titre -->
-                  <span>Lorem Ipsum</span>
-                  <!-- icon (à modifier selon le type) -->
-                  <i class="fa-solid fa-file-lines"></i>
-                </div>
-              </figcaption>
-            </a>
-          </figure>
-        </div>
-        <div class="actu__content" data-index="3">
-          <!-- Afficher les projets -->
-          <figure>
-            <!-- lien -->
-            <a href="">
-              <!-- img -->
-              <img src="./img/projet-3.jpg" alt="">
-              <figcaption>
-                <div>
-                  <!-- titre -->
-                  <span>Lorem Ipsum</span>
-                  <!-- icon (à modifier selon le type) -->
-                  <i class="fa-solid fa-file-lines"></i>
-                </div>
-              </figcaption>
-            </a>
-          </figure>
-        </div>
-      </main>
-    </div>
-    <script src="./js/actualite.js"></script>
-  </body>
+
+				</div>
+				<div class="actu__content" data-index="1">
+
+					<figure>
+						<!-- lien -->
+						<a href="">
+							<!-- img -->
+							<img src="./img/projet-1.jpg" alt="" />
+							<figcaption>
+								<div>
+									<!-- titre -->
+									<span>Lorem Ipsum</span>
+									<!-- icon (à modifier selon le type) -->
+									<i class="fa-solid fa-file-lines"></i>
+								</div>
+							</figcaption>
+						</a>
+					</figure>
+					<figure>
+						<!-- lien -->
+						<a href="">
+							<!-- img -->
+							<img src="./img/projet-1.jpg" alt="" />
+							<figcaption>
+								<div>
+									<!-- titre -->
+									<span>Lorem Ipsum</span>
+									<!-- icon (à modifier selon le type) -->
+									<i class="fa-solid fa-file-lines"></i>
+								</div>
+							</figcaption>
+						</a>
+					</figure>
+					<figure>
+						<!-- lien -->
+						<a href="">
+							<!-- img -->
+							<img src="./img/projet-1.jpg" alt="" />
+							<figcaption>
+								<div>
+									<!-- titre -->
+									<span>Lorem Ipsum</span>
+									<!-- icon (à modifier selon le type) -->
+									<i class="fa-solid fa-file-lines"></i>
+								</div>
+							</figcaption>
+						</a>
+					</figure>
+					<figure>
+						<!-- lien -->
+						<a href="">
+							<!-- img -->
+							<img src="./img/projet-1.jpg" alt="" />
+							<figcaption>
+								<div>
+									<!-- titre -->
+									<span>Lorem Ipsum</span>
+									<!-- icon (à modifier selon le type) -->
+									<i class="fa-solid fa-file-lines"></i>
+								</div>
+							</figcaption>
+						</a>
+					</figure>
+					<figure>
+						<!-- lien -->
+						<a href="">
+							<!-- img -->
+							<img src="https://place-hold.it/300x500" alt="" />
+							<figcaption>
+								<div>
+									<!-- titre -->
+									<span>Lorem Ipsum</span>
+									<!-- icon (à modifier selon le type) -->
+									<i class="fa-solid fa-file-lines"></i>
+								</div>
+							</figcaption>
+						</a>
+					</figure>
+				</div>
+				<div class="actu__content" data-index="2">
+					<!-- Afficher les publications -->
+					<figure>
+						<!-- lien -->
+						<a href="">
+							<!-- img -->
+							<img src="./img/projet-2.jpg" alt="" />
+							<figcaption>
+								<div>
+									<!-- titre -->
+									<span>Lorem Ipsum</span>
+									<!-- icon (à modifier selon le type) -->
+									<i class="fa-solid fa-file-lines"></i>
+								</div>
+							</figcaption>
+						</a>
+					</figure>
+				</div>
+				<div class="actu__content" data-index="3">
+					<!-- Afficher les projets -->
+					<figure>
+						<!-- lien -->
+						<a href="">
+							<!-- img -->
+							<img src="./img/projet-3.jpg" alt="" />
+							<figcaption>
+								<div>
+									<!-- titre -->
+									<span>Lorem Ipsum</span>
+									<!-- icon (à modifier selon le type) -->
+									<i class="fa-solid fa-file-lines"></i>
+								</div>
+							</figcaption>
+						</a>
+					</figure>
+				</div>
+			</main>
+		</div>
+		<script src="./js/actualite.js"></script>
+	</body>
 </html>

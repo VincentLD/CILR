@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/0045004211.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="form-profil">
+    <div class="wrapper">
+      <div class="profil-pic">
+        <label class="profil-label" for="file">
+          <span><i class="fa-solid fa-camera"></i>Changer de photo</span>
+        </label>
+        <img src="https://place-hold.it/165x165" id="output" alt="" />
+      </div>
+      <p class="indication">Appuyez sur l'image pour la changer</p>
+      <h3><i class="fa-solid fa-user"></i>Mon profil</h3>
+      <form action="">
+        <input class="picture-input" type="file" id="file" />
+        <div class="row">
+          <div class="form__group">
+            <label for="lastname">Nom</label>
+            <input type="text" id="lastname" name="" />
+          </div>
+          <div class="form__group">
+            <label for="firstname">Prénom</label>
+            <input type="text" id="firstname" name="" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form__group--radio">
+            <p>Genre</p>
+              <label for="genre">Femme</label>
+              <input type="radio" id="genre" />
+              <label for="genre">Homme</label>
+              <input type="radio" id="genre" />
+          </div>
+  
+          <div class="form__group">
+            <label for="phone">Téléphone</label>
+            <input type="text" id="phone" name="phone" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+  
+          <div class="form__group">
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" />
+          </div>
+        </div>
+  
+        <div class="form__group">
+          <label for="description">Description</label>
+          <textarea
+            type="text"
+            id="description"
+            rows="6"
+            name="description"
+          ></textarea>
+        </div>
+  
+        <div class="row">
+          <div class="form__group">
+            <label for="activitySector">Secteur d'activité</label>
+            <input type="text" id="activitySector" name="activitySector" />
+          </div>
+          <div class="form__group">
+            <label for="languages">Langues parlées</label>
+            <input type="text" id="languages" name="languages" />
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="form__group">
+            <label for="countryKnown">Pays d'experience</label>
+            <input type="text" id="countryKnown" name="countryKnown" />
+          </div>
+          <div class="form__group">
+            <label for="countryInfluence">Pays d'influence</label>
+            <input
+              type="text"
+              id="countryInfluence"
+              name="countryInfluence"
+            />
+          </div>
+        </div>
+        <button type="submit">Enregistrer les modifications</button>
+      </form>
+    </div>
+  </div>
+  <script src="./js/espace-membre.js"></script>
+</body>
+</html>
