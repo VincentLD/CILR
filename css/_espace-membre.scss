@@ -9,7 +9,7 @@
 	.tabnav {
 		background-color: $blue;
 		height: 10vh;
-		margin-bottom: 2em;
+		margin-bottom: 3em;
 
 		ul {
 			display: flex;
@@ -49,18 +49,35 @@
 			display: none;
 
 			&--active {
-				display: flex;
-				flex-wrap: wrap;
-				width: 90%;
-				margin: auto;
-				justify-content: space-evenly;
-				gap: 1em;
+				display: block;
+
+				.wrapper-content {
+					display: flex;
+					flex-wrap: wrap;
+					width: 90%;
+					margin: auto;
+					justify-content: space-evenly;
+					gap: 1em;
+					padding-top: 3em;
+				}
+
+				.btn-blue-white {
+					width: fit-content;
+					display: block;
+					margin: auto;
+					padding: .5em 1.5em;
+
+					i {
+						margin-right: .5em;
+					}
+				}
 
 				.card {
 					box-shadow: 0px 4px 4px #EFEFEF;
 					background-color: #FBFBFB;
 					border-radius: 12px;
 					max-width: 715px;
+					margin: auto;
 
 					.card__header {
 						background-color: #702020;

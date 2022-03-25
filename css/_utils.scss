@@ -1,12 +1,42 @@
-.block {
-  display: block;
+@import 'settings';
+// CUSTOM MIXINS 
+@mixin animation {
+  transition: all .15s ease-in-out;
 }
 
-.wrapper {
-  width: 90%;
-  max-width: 1440px;
-  margin: auto;
+@mixin btn($color1, $color2) {
+  padding: .5em 1em;
+  cursor: pointer;
+  border: 1px solid $color2;
+  @include animation;
+  color: $color2;
+  background-color: $color1;
+
+  &:hover {
+    background-color: $color2;
+    color: $color1;
+    border-color: $color1;
+  }
 }
+
+
+//COLOR1 => BG
+
+.btn-red-white {
+  @include btn($red, $white);
+ }
+ 
+ .btn-white-red {
+   @include btn($white, $red);
+ }
+ 
+ .btn-blue-white {
+   @include btn($blue, $white);
+ }
+ 
+ .btn-white-blue {
+   @include btn($white, $blue);
+ }
 
 @mixin flex-center {
   display: flex;
@@ -27,4 +57,15 @@
 @mixin flex-vertical-center {
   display: flex;
   align-items: center;
+}
+
+// CUSTOM CLASSES
+.block {
+  display: block;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
 }

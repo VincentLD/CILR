@@ -1,213 +1,187 @@
 @use 'utils';
 
 .body--active {
-  overflow-y: hidden;
+	overflow-y: hidden;
 }
 
 .header {
-  position: relative;
-  height: 50vh;
+	position: relative;
+	height: 50vh;
 
-  .header__left {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(17, 93, 140, .85);
-    color: $white;
-    padding: 2em;
-    width: 60%;
-    
-    .header__title {
-      text-align: center;
-      font-size: 2.5rem;
-    }
-  }
+	.header__left {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: rgba(17, 93, 140, 0.85);
+		color: $white;
+		padding: 2em;
+		width: 60%;
 
-  .header__right {
-    height: 100%;
+		.header__title {
+			text-align: center;
+			font-size: 2.5rem;
+		}
+	}
 
-  }
+	.header__right {
+		height: 100%;
+	}
 }
 
 .presentation {
-  position: relative;
-  height: 60vh;
+	position: relative;
+	height: 60vh;
 
-  img {
-    position: absolute;
-    opacity: .05;
-    z-index: -10;
-  }
+	img {
+		position: absolute;
+		opacity: 0.05;
+		z-index: -10;
+	}
 
-  .presentation__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    
-    .presentation__title {
-      text-align: center;
-      color: $red;
-      font-size: $fs-h2;
-    }
+	.presentation__wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
 
-    .presentation__content {
-      margin-bottom: 2em;
+		.presentation__title {
+			text-align: center;
+			color: $red;
+			font-size: $fs-h2;
+		}
 
-      .block {
-        margin-bottom: .5em;
-      }
-    }
+		.presentation__content {
+			margin-bottom: 2em;
 
-    .presentation__button {
-      display: block;
-      margin: auto;
-      background-color: transparent;
-      border: 2px solid $red;
-      padding: 0.3em 1.5em;
-      color: $red;
-      border-radius: 5px;
-      transition: all .3s ease;
-      cursor: pointer;
+			.block {
+				margin-bottom: 0.5em;
+			}
+		}
 
-      &:hover {
-        background-color: $red;
-        color: $white;
-      }
-    }
-  }
+		.btn-red-white {
+			border-color: transparent;
+			&:hover {
+				background-color: transparent;
+				border-color: $red;
+			}
+		}
+	}
 }
 
 .last-projects {
-  background-color: $red;
+	background-color: $red;
 
-  .last-projects-wrapper {
-    @include flex-center;
-    flex-direction: column;
+	.last-projects-wrapper {
+		@include flex-center;
+		flex-direction: column;
 
-      .last-projects__title {
-        text-align: center;
-        padding-top: 2em;
-        color: $white;
-      }
+		.last-projects__title {
+			text-align: center;
+			padding-top: 2em;
+			color: $white;
+		}
 
-      .wrapper {
-        padding: .3em;
-        border: 2px solid $white;
-        width: fit-content;
-        margin: 0 auto 2em auto;
-        border-radius: 3px;
+		.wrapper {
+			padding: 0.3em;
+			border: 2px solid $white;
+			width: fit-content;
+			margin: 0 auto 2em auto;
+			border-radius: 3px;
 
-        i {
-          color: $white;
-          margin-right: .3em;
-        }
-      }
+			i {
+				color: $white;
+				margin-right: 0.3em;
+			}
+		}
 
-      .last-projects__projects {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: space-between;
+		.last-projects__projects {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			justify-content: space-between;
 
-        .project {
-          width: 70%;
-          max-width: 300px;
-          margin: 0 auto 1em auto;
+			.project {
+				width: 70%;
+				max-width: 300px;
+				margin: 0 auto 1em auto;
 
-          figure {
-            img {
-              border-top-left-radius: 5px;
-              border-top-right-radius: 5px;
-            }
+				figure {
+					img {
+						border-top-left-radius: 5px;
+						border-top-right-radius: 5px;
+					}
 
-            figcaption {
-              background-color: $white;
-              color: $black;
-              position: relative;
-              top: -5px;
-              padding: 1em;
-              border-bottom-right-radius: 15px;
-              border-bottom-left-radius: 5px;
-            }
-          }
-        
-        }
-      }
+					figcaption {
+						background-color: $white;
+						color: $black;
+						position: relative;
+						top: -5px;
+						padding: 1em;
+						border-bottom-right-radius: 15px;
+						border-bottom-left-radius: 5px;
+					}
+				}
+			}
+		}
     button {
-      display: block;
-      margin: auto;
-      background-color: transparent;
-      border: 2px solid $white;
-      padding: 0.3em 2em;
-      color: $white;
-      border-radius: 5px;
-      transition: all .3s ease;
-      cursor: pointer;
       margin-bottom: 2em;
-
-      &:hover {
-        background-color: $white;
-        color: $red;
-      }
     }
-  }
+	}
 }
 
 @media screen and (min-width: 810px) {
-  .header {
-    position: unset;
-    display: flex;
-    height: 50vh;
+	.header {
+		position: unset;
+		display: flex;
+		height: 50vh;
 
-    .header__left {
-      all: unset;
-      width: 50%;
-      background-color: $blue;
-      @include flex-center;
+		.header__left {
+			all: unset;
+			width: 50%;
+			background-color: $blue;
+			@include flex-center;
 
-      .header__title {
-        color: $white;
-        text-align: left;
-        font-size: 4rem;
-      }
-    }
+			.header__title {
+				color: $white;
+				text-align: left;
+				font-size: 4rem;
+			}
+		}
 
-    .header__right {
-      width: 50%;
-      height: 100%;
+		.header__right {
+			width: 50%;
+			height: 100%;
 
-      img {
-        height: 100%;
-      }
-    }
-  }
+			img {
+				height: 100%;
+			}
+		}
+	}
 
-  .presentation {
-    height: 60vh;
+	.presentation {
+		height: 60vh;
 
-    img {
-      opacity: 1;
-    }
+		img {
+			opacity: 1;
+		}
 
-    .presentation__wrapper {
-      .content-wrapper {
-        background-color: rgba(240, 240, 240, .93);
-        border-radius: 5px;
-        padding: 1em 2em;
-        box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.83);
-        max-width: 700px;
-        margin: auto;
+		.presentation__wrapper {
+			.content-wrapper {
+				background-color: rgba(240, 240, 240, 0.93);
+				border-radius: 5px;
+				padding: 1em 2em;
+				box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.83);
+				max-width: 700px;
+				margin: auto;
 
-        .presentation__title {
-          text-align: left;
-        }
-        .presentation__button {
-          margin: 0 0 0 auto;
-        }
-      }
-    }
-  }
+				.presentation__title {
+					text-align: left;
+				}
+				.presentation__button {
+					margin: 0 0 0 auto;
+				}
+			}
+		}
+	}
 }
- 

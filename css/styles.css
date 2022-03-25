@@ -52,6 +52,126 @@ p {
   line-height: 22px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #131313;
+  font-size: 1.6rem;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+}
+
+.h2-topSection {
+  margin-bottom: 0;
+  position: relative;
+}
+.h2-topSection::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #fff;
+}
+
+p {
+  line-height: 22px;
+}
+
+.btn-red-white {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: 1px solid #fff;
+  transition: all 0.15s ease-in-out;
+  color: #fff;
+  background-color: #983636;
+}
+.btn-red-white:hover {
+  background-color: #fff;
+  color: #983636;
+  border-color: #983636;
+}
+
+.btn-white-red {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: 1px solid #983636;
+  transition: all 0.15s ease-in-out;
+  color: #983636;
+  background-color: #fff;
+}
+.btn-white-red:hover {
+  background-color: #983636;
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-blue-white {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: 1px solid #fff;
+  transition: all 0.15s ease-in-out;
+  color: #fff;
+  background-color: #115d8c;
+}
+.btn-blue-white:hover {
+  background-color: #fff;
+  color: #115d8c;
+  border-color: #115d8c;
+}
+
+.btn-white-blue {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: 1px solid #115d8c;
+  transition: all 0.15s ease-in-out;
+  color: #115d8c;
+  background-color: #fff;
+}
+.btn-white-blue:hover {
+  background-color: #115d8c;
+  color: #fff;
+  border-color: #fff;
+}
+
+.block {
+  display: block;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+}
+
 .nav {
   position: sticky;
   top: 0;
@@ -59,10 +179,10 @@ p {
   color: #fff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   z-index: 50;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .nav--active {
-  overflow-x: unset;
+  overflow: unset;
 }
 .nav .nav__membre {
   display: none;
@@ -93,6 +213,7 @@ p {
   align-items: center;
   height: 18vh;
   padding: 0.8em 0;
+  overflow-y: hidden;
 }
 .nav .nav__wrapper img {
   all: unset;
@@ -307,8 +428,6 @@ p {
   align-items: center;
 }
 .footer .footer__wrapper .cta .cta__contact {
-  background-color: #fff;
-  color: #115d8c;
   padding: 0.5em 0.8em;
   border-radius: 12px;
 }
@@ -354,6 +473,121 @@ p {
     justify-content: space-between;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #131313;
+  font-size: 1.6rem;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+}
+
+.h2-topSection {
+  margin-bottom: 0;
+  position: relative;
+}
+
+.h2-topSection::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #fff;
+}
+
+p {
+  line-height: 22px;
+}
+
+.btn-red-white {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: 1px solid #fff;
+  transition: all 0.15s ease-in-out;
+  color: #fff;
+  background-color: #983636;
+}
+
+.btn-red-white:hover {
+  background-color: #fff;
+  color: #983636;
+  border-color: #983636;
+}
+
+.btn-white-red {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: 1px solid #983636;
+  transition: all 0.15s ease-in-out;
+  color: #983636;
+  background-color: #fff;
+}
+
+.btn-white-red:hover {
+  background-color: #983636;
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-blue-white {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: 1px solid #fff;
+  transition: all 0.15s ease-in-out;
+  color: #fff;
+  background-color: #115d8c;
+}
+
+.btn-blue-white:hover {
+  background-color: #fff;
+  color: #115d8c;
+  border-color: #115d8c;
+}
+
+.btn-white-blue {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: 1px solid #115d8c;
+  transition: all 0.15s ease-in-out;
+  color: #115d8c;
+  background-color: #fff;
+}
+
+.btn-white-blue:hover {
+  background-color: #115d8c;
+  color: #fff;
+  border-color: #fff;
+}
+
 .block {
   display: block;
 }
@@ -416,20 +650,12 @@ p {
 .presentation .presentation__wrapper .presentation__content .block {
   margin-bottom: 0.5em;
 }
-.presentation .presentation__wrapper .presentation__button {
-  display: block;
-  margin: auto;
-  background-color: transparent;
-  border: 2px solid #983636;
-  padding: 0.3em 1.5em;
-  color: #983636;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-  cursor: pointer;
+.presentation .presentation__wrapper .btn-red-white {
+  border-color: transparent;
 }
-.presentation .presentation__wrapper .presentation__button:hover {
-  background-color: #983636;
-  color: #fff;
+.presentation .presentation__wrapper .btn-red-white:hover {
+  background-color: transparent;
+  border-color: #983636;
 }
 
 .last-projects {
@@ -482,20 +708,7 @@ p {
   border-bottom-left-radius: 5px;
 }
 .last-projects .last-projects-wrapper button {
-  display: block;
-  margin: auto;
-  background-color: transparent;
-  border: 2px solid #fff;
-  padding: 0.3em 2em;
-  color: #fff;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-  cursor: pointer;
   margin-bottom: 2em;
-}
-.last-projects .last-projects-wrapper button:hover {
-  background-color: #fff;
-  color: #983636;
 }
 
 @media screen and (min-width: 810px) {
@@ -973,14 +1186,7 @@ p {
   margin-bottom: 3em;
 }
 .contact .contact__wrapper .contact__left a {
-  color: #983636;
   padding: 0.5em 1em;
-  border: 1px solid #983636;
-  transition: all 0.3s ease;
-}
-.contact .contact__wrapper .contact__left a:hover {
-  background-color: #983636;
-  color: #fff;
 }
 .contact .contact__wrapper .contact__right .right__coordonnees {
   margin-bottom: 1em;
@@ -1142,25 +1348,19 @@ p {
   margin-bottom: 1em;
 }
 .contact .form .wrapper form button {
-  background-color: #fff;
-  color: #115d8c;
-  border: none;
   padding: 0.5em 1em;
-  text-align: center;
   font-size: 1.9rem;
   border-radius: 5px;
-  transition: all 0.2s ease;
   border: 2px solid transparent;
-  cursor: pointer;
 }
 .contact .form .wrapper form button i {
   padding-left: 1em;
   transition: all 0.2s ease;
 }
 .contact .form .wrapper form button:hover {
-  border: 2px solid #fff;
-  background-color: #115d8c;
+  background-color: transparent;
   color: #fff;
+  border-color: #fff;
 }
 .contact .form .wrapper form button:hover i {
   color: #fff;
@@ -1249,25 +1449,16 @@ p {
   border: 2px solid #115d8c;
 }
 .connexion .wrapper form .form__group button {
-  background-color: #115d8c;
-  color: white;
-  border: 2px solid transparent;
+  border-width: 2px;
   font-size: 1.7rem;
   width: fit-content;
   padding: 0.5em 1em;
   margin-left: auto;
   border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.2s ease;
 }
 .connexion .wrapper form .form__group button i {
   padding-left: 0.7em;
   transition: all 0.2s ease;
-}
-.connexion .wrapper form .form__group button:hover {
-  color: #115d8c;
-  background-color: #fff;
-  border-color: #115d8c;
 }
 
 .espace-membre header {
@@ -1281,7 +1472,7 @@ p {
 .espace-membre .tabnav {
   background-color: #115d8c;
   height: 10vh;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 .espace-membre .tabnav ul {
   display: flex;
@@ -1318,18 +1509,32 @@ p {
   display: none;
 }
 .espace-membre main .actu__content--active {
+  display: block;
+}
+.espace-membre main .actu__content--active .wrapper-content {
   display: flex;
   flex-wrap: wrap;
   width: 90%;
   margin: auto;
   justify-content: space-evenly;
   gap: 1em;
+  padding-top: 3em;
+}
+.espace-membre main .actu__content--active .btn-blue-white {
+  width: fit-content;
+  display: block;
+  margin: auto;
+  padding: 0.5em 1.5em;
+}
+.espace-membre main .actu__content--active .btn-blue-white i {
+  margin-right: 0.5em;
 }
 .espace-membre main .actu__content--active .card {
   box-shadow: 0px 4px 4px #EFEFEF;
   background-color: #FBFBFB;
   border-radius: 12px;
   max-width: 715px;
+  margin: auto;
 }
 .espace-membre main .actu__content--active .card .card__header {
   background-color: #702020;
@@ -1448,8 +1653,6 @@ p {
   transition: all 0.3s ease;
   width: fit-content;
   margin: auto;
-  justify-content: space-evenly;
-  gap: 1em;
 }
 .form-profil .wrapper .profil-pic .profil-label {
   cursor: pointer;

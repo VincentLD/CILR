@@ -37,15 +37,7 @@
 			}
 
 			a {
-				color: $red;
 				padding: .5em 1em;
-				border: 1px solid $red;
-				transition: all .3s ease;
-
-				&:hover {
-					background-color: $red;
-					color: $white;
-				}
 			}
 		}
 
@@ -233,16 +225,10 @@
 					margin-bottom: 1em;
 				}
 				button {
-					background-color: $white;
-					color: $blue;
-					border: none;
 					padding: .5em 1em;
-					text-align: center;
 					font-size: 1.9rem;
 					border-radius: 5px;
-					transition: all .2s ease;
 					border: 2px solid transparent;
-					cursor: pointer;
 					
 					i {
 						padding-left: 1em;
@@ -250,9 +236,9 @@
 					}
 
 					&:hover {
-						border: 2px solid $white;
-						background-color: $blue;
+						background-color: transparent;
 						color: $white;
+						border-color: $white;
 						i{color: $white}
 					}
 				}

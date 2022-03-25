@@ -56,25 +56,15 @@
         }
 
         button {
-          background-color: $blue;
-          color: white;
-          border: 2px solid transparent;
+          border-width: 2px;
           font-size: 1.7rem;
           width: fit-content;
           padding: .5em 1em;
           margin-left: auto;
           border-radius: 5px;
-          cursor: pointer;
-          transition: all .2s ease;
           i {
             padding-left: .7em;
             transition: all .2s ease;
-          }
-
-          &:hover {
-            color: $blue;
-            background-color: $white;
-            border-color: $blue;
           }
         }
       }
