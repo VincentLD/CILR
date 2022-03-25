@@ -1132,7 +1132,7 @@ p {
 .club .ca .cards__wrapper .card {
   border-radius: 20px;
   width: 45%;
-  min-height: 200px;
+  min-height: 170px;
   max-width: 365px;
   margin-bottom: 70px;
 }
@@ -1794,6 +1794,9 @@ p {
     margin: auto;
   }
 }
+.form-evenement {
+  margin-bottom: 2em;
+}
 .form-evenement .wrapper {
   padding-top: 2em;
 }
@@ -1814,6 +1817,70 @@ p {
   background-color: #115d8c;
   width: 100%;
   height: 2px;
+}
+.form-evenement .wrapper select {
+  background-color: #fff;
+}
+
+@media screen and (min-width: 810px) {
+  .form-evenement .wrapper .form__group--description {
+    width: 100%;
+  }
+  .form-evenement .wrapper .sub-row {
+    width: 48%;
+  }
+}
+.form-evenement .form__group--textarea {
+  width: 100%;
+}
+
+.trombinoscope {
+  margin-bottom: 3em;
+}
+.trombinoscope .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 930px;
+}
+.trombinoscope .wrapper .card {
+  width: 32%;
+  min-width: 200px;
+  max-width: 290px;
+  gap: 0.5em;
+  margin-bottom: 1em;
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.05);
+  transform: scale(1);
+  filter: grayscale(0);
+  transition: all 0.1s ease-in-out;
+}
+.trombinoscope .wrapper .card:hover {
+  filter: grayscale(80%);
+  transform: scale(1.05);
+}
+.trombinoscope .wrapper .card .card__header img {
+  height: 250px;
+}
+.trombinoscope .wrapper .card .card__body {
+  padding: 1em 0.5em;
+}
+.trombinoscope .wrapper .card .card__body .card__name {
+  color: #a5a5a5;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+}
+.trombinoscope .wrapper .card .card__body .card__rank {
+  text-transform: capitalize;
+  color: #131313;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 450px) {
+  .trombinoscope .wrapper .card {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

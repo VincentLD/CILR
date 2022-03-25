@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/0045004211.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="form-actualite">
+    <div class="wrapper">
+      <h3><i class="fa-solid fa-calendar"></i>Créer une actualité</h3>
+      <form action="" method="POST">
+        <div class="row">
+          <div class="form__group">
+            <label for="title" class="form__label">Titre</label>
+            <input type="text" class="form__input" id="title">
+          </div>
+          <div class="form__group">
+            <label for="file" class="form__label">Image en avant</label>
+            <input type="file" id="file">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form__group form__group--description">
+            <label for="description" class="form__label">Description</label>
+            <textarea id="description" name="description" rows="6" class="form__input"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form__group">
+            <label for="date-debut" class="form__label">Date de début</label>
+            <input type="date" class="form__input" id="date-debut">
+          </div>
+          <div class="form__group">
+            <label for="date-fin" class="form__label">Date de fin</label>
+            <input type="date" class="form__input" id="date-fin">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form__group">
+            <label for="rue" class="form__label">Rue</label>
+            <input type="text" class="form__input" id="rue">
+          </div>
+          <div class="row sub-row">
+            <div class="form__group">
+              <label for="code-postal" class="form__label">Code postal</label>
+              <input type="text" class="form__input" id="code-postal">
+            </div>
+            <div class="form__group">
+              <label for="ville" class="form__label">Ville</label>
+              <input type="text" class="form__input" id="ville">
+            </div>
+          </div>
+        </div>
+          <div class="row">
+            <div class="form__group">
+              <label for="projets-liés" class="form__label">Projet(s) lié(s) (facultatif)</label>
+              <select name="" id="projets-liés" class="form__input">
+                <option value="">Test</option>
+                <option value="">Test</option>
+                <option value="">Test</option>
+              </select>
+            </div>
+          </div>
+        <button class="btn-blue-white">Créer l'évènement</button>
+      </form>
+    </div>    
+  </div>
+</body>
+</html>
