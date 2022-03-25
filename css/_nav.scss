@@ -42,8 +42,8 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0.8em 0;
 		overflow-y: hidden;
+		height: 100%;
 
 		img {
 			all: unset;
@@ -231,7 +231,7 @@
 						
 						li {
 							font-size: 1.6rem;
-							
+
 							a {
 								position: relative;
 	

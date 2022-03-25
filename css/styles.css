@@ -268,8 +268,8 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8em 0;
   overflow-y: hidden;
+  height: 100%;
 }
 .nav .nav__wrapper img {
   all: unset;
@@ -1615,12 +1615,12 @@ p {
 }
 .espace-membre main .actu__content--active .card .card__header .header__denomination {
   position: relative;
-  right: 20%;
-  transform: translateX(50%);
+  left: 30%;
+  padding: 0.5em 0;
 }
 .espace-membre main .actu__content--active .card .card__header .header__denomination .header__name {
   width: unset;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.5);
   font-size: clamp(2.5rem, 5vw, 5rem);
   margin: unset;
 }
@@ -1629,9 +1629,10 @@ p {
 }
 .espace-membre main .actu__content--active .card .card__header .header__denomination .header__rank {
   font-size: clamp(1.5rem, 3vw, 2rem);
+  color: #fff;
 }
 .espace-membre main .actu__content--active .card .card__content {
-  padding: 1.5em;
+  padding: 8% 1.5em 1.5em 1.5em;
 }
 .espace-membre main .actu__content--active .card .card__content .group {
   margin-bottom: 1.5em;

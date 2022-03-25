@@ -96,12 +96,12 @@
 
 						.header__denomination {
 							position: relative;
-							right: 20%;
-							transform: translateX(50%);
+							left: 30%;
+							padding: .5em 0;
 
 							.header__name {
 								width: unset;
-								color: rgba(255, 255, 255, 0.7);
+								color: rgba(255, 255, 255, 0.5);
 								font-size: clamp(2.5rem, 5vw, 5rem);
 								margin: unset;
 
@@ -111,12 +111,13 @@
 							}
 							.header__rank {
 								font-size: clamp(1.5rem, 3vw, 2rem);
+								color: $white;
 							}
 						}
 					}
 
 					.card__content {
-						padding: 1.5em;
+						padding: 8% 1.5em 1.5em 1.5em;
 
 						.group {
 							margin-bottom: 1.5em;
