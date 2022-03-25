@@ -1,9 +1,6 @@
 .espace-membre {
 	header {
-		background-color: $light-blue;
-		@include flex-center;
-		height: 15vh;
-		color: $white;
+		margin: unset;
 	}
 
 	.tabnav {

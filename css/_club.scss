@@ -1,5 +1,8 @@
 .club {
-
+  .club__header {
+    display: flex;
+  }
+  
   h2 {
     position: relative;
     width: fit-content;

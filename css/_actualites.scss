@@ -1,9 +1,6 @@
 .actu {
-	header {
-		background-color: $light-blue;
-		@include flex-center;
-		height: 15vh;
-		color: $white;
+	.header-subpages {
+		margin: unset;
 	}
 
 	.tabnav {

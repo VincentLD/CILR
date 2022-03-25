@@ -1,18 +1,4 @@
 .single {
-	header {
-		background-color: $light-blue;
-		@include flex-center;
-		height: 20vh;
-		color: $white;
-		position: relative;
-		margin-bottom: 3em;
-
-		img {
-			position: absolute;
-			opacity: 0.3;
-			pointer-events: none;
-		}
-	}
 
 	.single__content {
 		padding: 1em;

@@ -19,9 +19,6 @@
   }
 }
 
-
-//COLOR1 => BG
-
 .btn-red-white {
   @include btn($red, $white);
  }
@@ -69,3 +66,63 @@
   max-width: 1440px;
   margin: auto;
 }
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form__label {
+  color: $blue;
+  font-weight: bold;
+  margin-bottom: 0.4em;
+
+  i {
+    margin-right: .5em;
+  }
+}
+
+.form__input {
+  border: 1px solid $blue;
+  padding: 0.3em 0.6em;
+  border-radius: 5px;
+
+  &:focus-visible {
+    border-color: transparent;
+    outline: 2px solid $light-blue;
+  }
+}
+
+.header-subpages {
+  background-color: $light-blue;
+  @include flex-center;
+  height: 20vh;
+  color: $white;
+  position: relative;
+  margin-bottom: 3em;
+
+  img {
+    position: absolute;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  h2 {
+    margin: unset;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+  }
+
+  .form__group {
+    width: 48%;
+  }
+}
+

@@ -23,17 +23,17 @@
         <input class="picture-input" type="file" id="file" />
         <div class="row">
           <div class="form__group">
-            <label for="lastname">Nom</label>
-            <input type="text" id="lastname" name="" />
+            <label class="form__label" for="lastname">Nom</label>
+            <input class="form__input" type="text" id="lastname" name="" />
           </div>
           <div class="form__group">
-            <label for="firstname">Prénom</label>
-            <input type="text" id="firstname" name="" />
+            <label class="form__label" for="firstname">Prénom</label>
+            <input class="form__input" type="text" id="firstname" name="" />
           </div>
         </div>
         <div class="row">
           <div class="form__group--radio">
-            <p>Genre</p>
+            <p class="form__label">Genre</p>
               <label for="genre">Femme</label>
               <input type="radio" id="genre" />
               <label for="genre">Homme</label>
@@ -41,25 +41,26 @@
           </div>
   
           <div class="form__group">
-            <label for="phone">Téléphone</label>
-            <input type="text" id="phone" name="phone" />
+            <label class="form__label" for="phone">Téléphone</label>
+            <input class="form__input" type="text" id="phone" name="phone" />
           </div>
         </div>
         <div class="row">
           <div class="form__group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input" type="email" id="email" name="email" />
           </div>
   
           <div class="form__group">
-            <label for="password">Mot de passe</label>
-            <input type="password" id="password" name="password" />
+            <label class="form__label" for="password">Mot de passe</label>
+            <input class="form__input" type="password" id="password" name="password" />
           </div>
         </div>
   
         <div class="form__group">
-          <label for="description">Description</label>
+          <label class="form__label" for="description">Description</label>
           <textarea
+            class="form__input"
             type="text"
             id="description"
             rows="6"
@@ -69,30 +70,31 @@
   
         <div class="row">
           <div class="form__group">
-            <label for="activitySector">Secteur d'activité</label>
-            <input type="text" id="activitySector" name="activitySector" />
+            <label class="form__label" for="activitySector">Secteur d'activité</label>
+            <input class="form__input" type="text" id="activitySector" name="activitySector" />
           </div>
           <div class="form__group">
-            <label for="languages">Langues parlées</label>
-            <input type="text" id="languages" name="languages" />
+            <label class="form__label" for="languages">Langues parlées</label>
+            <input class="form__input" type="text" id="languages" name="languages" />
           </div>
         </div>
   
         <div class="row">
           <div class="form__group">
-            <label for="countryKnown">Pays d'experience</label>
-            <input type="text" id="countryKnown" name="countryKnown" />
+            <label class="form__label" for="countryKnown">Pays d'experience</label>
+            <input class="form__input" type="text" id="countryKnown" name="countryKnown" />
           </div>
           <div class="form__group">
-            <label for="countryInfluence">Pays d'influence</label>
+            <label class="form__label" for="countryInfluence">Pays d'influence</label>
             <input
+              class="form__input"
               type="text"
               id="countryInfluence"
               name="countryInfluence"
             />
           </div>
         </div>
-        <button type="submit">Enregistrer les modifications</button>
+        <button class="btn-blue-white" type="submit">Enregistrer les modifications</button>
       </form>
     </div>
   </div>

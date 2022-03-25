@@ -1,5 +1,5 @@
 .connexion {
-  header {
+  /* header {
 		background-color: $light-blue;
 		@include flex-center;
 		height: 20vh;
@@ -12,7 +12,7 @@
 			opacity: 0.3;
 			pointer-events: none;
 		}
-  }
+  } */
 
   .wrapper {
     form {
@@ -38,34 +38,15 @@
         }
       }
 
-      .form__group {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1em;
-        color: $blue;
-
-        label {
-          margin-bottom: .4em;
-          i {margin-right: .7em;}
-        }
-
-        input {
-          padding: .5em 1em;
-          border-radius: 5px;
-          border: 2px solid $blue;
-        }
-
-        button {
-          border-width: 2px;
-          font-size: 1.7rem;
-          width: fit-content;
-          padding: .5em 1em;
-          margin-left: auto;
-          border-radius: 5px;
-          i {
-            padding-left: .7em;
-            transition: all .2s ease;
-          }
+      button {
+        border-width: 2px;
+        font-size: 1.7rem;
+        width: fit-content;
+        padding: .5em 1em;
+        margin-left: auto;
+        border-radius: 5px;
+        i {
+          padding-left: .7em;
         }
       }
     }
