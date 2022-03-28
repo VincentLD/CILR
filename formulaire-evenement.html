@@ -9,38 +9,61 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="form-evenement">
+  <div class="form form-evenement">
     <div class="wrapper">
-      <h3><i class="fa-solid fa-calendar"></i>Créer un évènement</h3>
-      <form action="" method="POST">
-       <div class="row">
-         <div class="form__group">
-           <label for="titre" class="form__label">Titre</label>
-           <input type="text" class="form__input" id="titre">
+        <h3><i class="fa-solid fa-calendar"></i>Créer un évènement</h3>
+        <form action="" method="POST">
+         <div class="row">
+           <div class="form__group">
+             <label for="titre" class="form__label">Titre</label>
+             <input type="text" class="form__input" id="titre">
+           </div>
+           <div class="form__group">
+             <label for="fichier" class="form__label">Joindre un fichier</label>
+             <input type="file" id="fichier">
+           </div>
          </div>
-         <div class="form__group">
-           <label for="fichier" class="form__label">Joindre un fichier</label>
-           <input type="file" id="fichier">
+         <div class="row">
+           <div class="form__group form__group--textarea">
+             <label for="description" class="form__label">Description</label>
+             <textarea name="" id="description" rows="6" class="form__input form__input"></textarea>
+           </div>
          </div>
-       </div>
-       <div class="row">
-         <div class="form__group form__group--textarea">
-           <label for="description" class="form__label">Description</label>
-           <textarea name="" id="description" rows="6" class="form__input form__input"></textarea>
+         <div class="row">
+           <div class="form__group">
+             <label for="date-debut" class="form__label">Date de début</label>
+             <input type="date" class="form__input" id="date-debut">
+           </div>
+           <div class="form__group">
+             <label for="date-fin" class="form__label">Date de fin</label>
+             <input type="date" class="form__input" id="date-fin">
+           </div>
          </div>
-       </div>
-       <div class="row">
-         <div class="form__group">
-           <label for="date-debut" class="form__label">Date de début</label>
-           <input type="date" class="form__input" id="date-debut">
+         <div class="row">
+           <div class="form__group">
+             <label for="rue" class="form__label">Rue</label>
+             <input type="text" class="form__input" id="rue">
+           </div>
+           <div class="form__group">
+             <label for="cp" class="form__label">Code postal</label>
+             <input type="text" class="form__input" id="cp">
+           </div>
+           <div class="form__group">
+             <label for="ville" class="form__label">Ville</label>
+             <input type="text" class="form__input" id="ville">
+           </div>
          </div>
-         <div class="form__group">
-           <label for="date-fin" class="form__label">Date de fin</label>
-           <input type="date" class="form__input" id="date-fin">
+         <div class="row">
+           <div class="form__group">
+             <label for="projet" class="form__label">Projet</label>
+             <select name="" id="projet" class="form__input">
+               <option value="">option 1</option>
+               <option value="">option 1</option>
+             </select>
+           </div>
          </div>
-       </div>
-        <button class="btn-blue-white">Créer l'évènement</button>
-      </form>
+          <button class="btn-blue-white">Créer l'évènement</button>
+        </form>
     </div>    
   </div>
 </body>

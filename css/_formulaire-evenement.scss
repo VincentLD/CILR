@@ -1,42 +1,9 @@
-.form-evenement {
-  margin-bottom: 2em;
-  .wrapper {
-    padding-top: 2em;
-
-    h3 {
-      color: $blue;
-      position: relative;
-      width: fit-content;
-      margin-bottom: 1.5em;
-
-      i {
-        margin-right: .5em;
-      }
-
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        background-color: $blue;
-        width: 100%;
-        height: 2px;
-      }
-    }
-    select {
-      background-color: $white;
-    }
-  }
-} 
 
 @media screen and (min-width: 810px) {
-  .form-evenement {
+  .form {
     .wrapper {
-      .form__group--description {
+      .form__group--textarea {
         width: 100%;
-      }
-      .sub-row {
-        width: 48%;
       }
     }
   }

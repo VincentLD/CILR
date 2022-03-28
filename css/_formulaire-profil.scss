@@ -1,9 +1,8 @@
 .form-profil {
 	.wrapper {
-		margin-bottom: 2em;
 		flex-wrap: unset;
 		flex-direction: column;
-	
+
 		.profil-pic {
 			color: transparent;
 			box-shadow: 0 0 30px -20px rgba(0, 0, 0, 0.8);
@@ -13,13 +12,13 @@
 			transition: all 0.3s ease;
 			width: fit-content;
 			margin: auto;
-	
+
 			.profil-label {
 				cursor: pointer;
 				height: 165px;
 				width: 165px;
 			}
-	
+
 			img {
 				position: absolute;
 				width: 165px;
@@ -27,7 +26,7 @@
 				box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.35);
 				border-radius: 100px;
 			}
-	
+
 			&:hover {
 				.profil-label {
 					@include flex-center;
@@ -39,67 +38,40 @@
 					margin-bottom: 0;
 				}
 			}
-	
+
 			span {
 				font-size: 1.4rem;
 				padding: 0.2em;
 				height: 0.2em;
-	
+
 				i {
 					margin-right: 0.25em;
 				}
 			}
 		}
-	
-	
-			.indication {
-				font-size: 1.3rem;
-				padding-top: 1em;
-				font-style: italic;
-				color: lightgrey;
-				text-align: center;
-				margin-bottom: 1em;
-			}
-	
-			.picture-input {
-				position: absolute;
-				width: 0.1px;
-				height: 0.1px;
-				background: transparent;
-				border: none;
-				z-index: -10;
-			}
-	
-			h3 {
-				color: $blue;
-				position: relative;
-				margin-bottom: 0.6em;
-				width: fit-content;
-	
-				i {
-					margin-right: 0.5em;
-				}
-	
-				&::after {
-					content: '';
-					position: absolute;
-					left: 0;
-					bottom: -4px;
-					height: 2px;
-					width: 105%;
-					background-color: $blue;
-					border-radius: 2px;
-				}
-			}
-	
-			input[type='radio'] {
-				margin: 0 1.4em 1.2em 0.5em;
-			}
-	
-			button {
-				padding: 0.5em 1em;
-				border-radius: 5px;
-			}
+
+		.indication {
+			font-size: 1.3rem;
+			padding-top: 1em;
+			font-style: italic;
+			color: lightgrey;
+			text-align: center;
+			margin-bottom: 1em;
+		}
+
+		.picture-input {
+			position: absolute;
+			width: 0.1px;
+			height: 0.1px;
+			background: transparent;
+			border: none;
+			z-index: -10;
+		}
+
+		button {
+			padding: 0.5em 1em;
+			border-radius: 5px;
+		}
 	}
 }
 

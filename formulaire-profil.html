@@ -9,7 +9,7 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="form-profil">
+  <div class="form form-profil">
     <div class="wrapper">
       <div class="profil-pic">
         <label class="profil-label" for="file">
@@ -32,12 +32,12 @@
           </div>
         </div>
         <div class="row">
-          <div class="form__group--radio">
-            <p class="form__label">Genre</p>
-              <label for="genre">Femme</label>
-              <input type="radio" id="genre" />
-              <label for="genre">Homme</label>
-              <input type="radio" id="genre" />
+          <div class="form__group">
+            <label class="form__label" for="genre">Genre</label>
+            <select name="" id="genre" class="form__input">
+              <option value="">Homme</option>
+              <option value="">Femme</option>
+            </select>
           </div>
   
           <div class="form__group">
@@ -57,7 +57,7 @@
           </div>
         </div>
   
-        <div class="form__group">
+        <div class="form__group form__group--textarea">
           <label class="form__label" for="description">Description</label>
           <textarea
             class="form__input"
@@ -81,7 +81,7 @@
   
         <div class="row">
           <div class="form__group">
-            <label class="form__label" for="countryKnown">Pays d'experience</label>
+            <label class="form__label" for="countryKnown">Pays d'expérience</label>
             <input class="form__input" type="text" id="countryKnown" name="countryKnown" />
           </div>
           <div class="form__group">

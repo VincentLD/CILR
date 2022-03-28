@@ -172,18 +172,38 @@ p {
   margin: auto;
 }
 
-.form__group {
+.form {
+  margin: 2em auto;
+}
+.form h3 {
+  color: #115d8c;
+  position: relative;
+  width: fit-content;
+  margin-bottom: 1.5em;
+}
+.form h3 i {
+  margin-right: 0.5em;
+}
+.form h3::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  background-color: #115d8c;
+  width: 100%;
+  height: 2px;
+}
+.form .form__group {
   display: flex;
   flex-direction: column;
   margin-bottom: 1em;
 }
-
-.form__label {
+.form .form__label {
   color: #115d8c;
   font-weight: bold;
   margin-bottom: 0.4em;
 }
-.form__label i {
+.form .form__label i {
   margin-right: 0.5em;
 }
 
@@ -191,6 +211,7 @@ p {
   border: 1px solid #115d8c;
   padding: 0.3em 0.6em;
   border-radius: 5px;
+  background-color: #fff;
 }
 .form__input:focus-visible {
   border-color: transparent;
@@ -222,6 +243,13 @@ p {
     display: flex;
     justify-content: space-between;
     gap: 1em;
+  }
+  .row--half {
+    flex-direction: column;
+    width: 48%;
+  }
+  .row--half .form__group {
+    width: 100%;
   }
 
   .form__group {
@@ -647,19 +675,44 @@ p {
   margin: auto;
 }
 
-.form__group {
+.form {
+  margin: 2em auto;
+}
+
+.form h3 {
+  color: #115d8c;
+  position: relative;
+  width: fit-content;
+  margin-bottom: 1.5em;
+}
+
+.form h3 i {
+  margin-right: 0.5em;
+}
+
+.form h3::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  background-color: #115d8c;
+  width: 100%;
+  height: 2px;
+}
+
+.form .form__group {
   display: flex;
   flex-direction: column;
   margin-bottom: 1em;
 }
 
-.form__label {
+.form .form__label {
   color: #115d8c;
   font-weight: bold;
   margin-bottom: 0.4em;
 }
 
-.form__label i {
+.form .form__label i {
   margin-right: 0.5em;
 }
 
@@ -667,6 +720,7 @@ p {
   border: 1px solid #115d8c;
   padding: 0.3em 0.6em;
   border-radius: 5px;
+  background-color: #fff;
 }
 
 .form__input:focus-visible {
@@ -701,6 +755,15 @@ p {
     display: flex;
     justify-content: space-between;
     gap: 1em;
+  }
+
+  .row--half {
+    flex-direction: column;
+    width: 48%;
+  }
+
+  .row--half .form__group {
+    width: 100%;
   }
 
   .form__group {
@@ -1698,7 +1761,6 @@ p {
   }
 }
 .form-profil .wrapper {
-  margin-bottom: 2em;
   flex-wrap: unset;
   flex-direction: column;
 }
@@ -1761,28 +1823,6 @@ p {
   border: none;
   z-index: -10;
 }
-.form-profil .wrapper h3 {
-  color: #115d8c;
-  position: relative;
-  margin-bottom: 0.6em;
-  width: fit-content;
-}
-.form-profil .wrapper h3 i {
-  margin-right: 0.5em;
-}
-.form-profil .wrapper h3::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  height: 2px;
-  width: 105%;
-  background-color: #115d8c;
-  border-radius: 2px;
-}
-.form-profil .wrapper input[type=radio] {
-  margin: 0 1.4em 1.2em 0.5em;
-}
 .form-profil .wrapper button {
   padding: 0.5em 1em;
   border-radius: 5px;
@@ -1794,46 +1834,11 @@ p {
     margin: auto;
   }
 }
-.form-evenement {
-  margin-bottom: 2em;
-}
-.form-evenement .wrapper {
-  padding-top: 2em;
-}
-.form-evenement .wrapper h3 {
-  color: #115d8c;
-  position: relative;
-  width: fit-content;
-  margin-bottom: 1.5em;
-}
-.form-evenement .wrapper h3 i {
-  margin-right: 0.5em;
-}
-.form-evenement .wrapper h3::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  background-color: #115d8c;
-  width: 100%;
-  height: 2px;
-}
-.form-evenement .wrapper select {
-  background-color: #fff;
-}
-
 @media screen and (min-width: 810px) {
-  .form-evenement .wrapper .form__group--description {
+  .form .wrapper .form__group--textarea {
     width: 100%;
   }
-  .form-evenement .wrapper .sub-row {
-    width: 48%;
-  }
 }
-.form-evenement .form__group--textarea {
-  width: 100%;
-}
-
 .trombinoscope {
   margin-bottom: 3em;
 }

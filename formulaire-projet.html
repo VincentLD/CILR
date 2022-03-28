@@ -9,7 +9,7 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="form-evenement">
+  <div class="form form-evenement">
     <div class="wrapper">
       <h3><i class="fa-solid fa-diagram-project"></i></i>Créer un projet</h3>
       <form action="" method="POST">
@@ -19,24 +19,28 @@
            <input type="text" class="form__input" id="titre">
          </div>
          <div class="form__group">
-           <label for="fichier" class="form__label">Joindre un fichier</label>
-           <input type="file" id="fichier">
+           <label for="etat" class="form__label">État du projet</label>
+            <select name="" id="etat" class="form__input">
+              <option value="">En cours</option>
+              <option value="">À venir</option>
+              <option value="">Terminé</option>
+            </select>
          </div>
        </div>
        <div class="row">
-         <div class="form__group form__group--textarea">
+         <div class="form__group">
            <label for="description" class="form__label">Description</label>
            <textarea name="" id="description" rows="6" class="form__input form__input"></textarea>
          </div>
-       </div>
-       <div class="row">
-         <div class="form__group">
-           <label for="date-debut" class="form__label">Date de début</label>
-           <input type="date" class="form__input" id="date-debut">
-         </div>
-         <div class="form__group">
-           <label for="date-fin" class="form__label">Date de fin</label>
-           <input type="date" class="form__input" id="date-fin">
+         <div class="row row--half">
+           <div class="form__group">
+             <label for="brochure" class="form__label">Brochure</label>
+             <input type="file">
+           </div>
+           <div class="form__group">
+             <label for="file" class="form__label">Lien discord</label>
+             <input type="text" class="form__input">
+           </div>
          </div>
        </div>
         <button class="btn-blue-white">Créer l'évènement</button>
