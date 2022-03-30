@@ -1887,5 +1887,54 @@ p {
     width: 100%;
   }
 }
+.single .wrapper .single__content .content__left .content__infos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  color: #115d8c;
+  margin-bottom: 1em;
+  order: 2;
+}
+.single .wrapper .single__content .content__left .content__infos a {
+  color: #115d8c;
+  text-decoration: underline;
+}
+.single .wrapper .single__content .content__left .content__infos span i {
+  margin-right: 0.5em;
+}
+.single .wrapper .single__content .content__left .crud {
+  display: flex;
+  order: 2;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+.single .wrapper .single__content .content__left .crud .btn {
+  width: fit-content;
+  min-width: 100px;
+  border: 1px solid transparent;
+  color: #fff;
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: last baseline;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border-radius: 30px;
+}
+.single .wrapper .single__content .content__left .crud .btn i {
+  margin-right: 0.5em;
+}
+.single .wrapper .single__content .content__left .crud .btn--edit {
+  background-color: #d79419;
+}
+.single .wrapper .single__content .content__left .crud .btn--edit:hover, .single .wrapper .single__content .content__left .crud .btn--edit:focus-visible {
+  background-color: #fca503;
+}
+.single .wrapper .single__content .content__left .crud .btn--delete {
+  background-color: #ba1212;
+}
+.single .wrapper .single__content .content__left .crud .btn--delete:hover, .single .wrapper .single__content .content__left .crud .btn--delete:focus-visible {
+  background-color: #d33e3e;
+}
 
 /*# sourceMappingURL=styles.css.map */

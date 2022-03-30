@@ -1,0 +1,60 @@
+.single {
+  .wrapper {
+    .single__content {
+      .content__left {
+        .content__infos {
+          display: flex;
+          flex-direction: column;
+          gap: .5em;
+          color: $blue;
+          margin-bottom: 1em;
+          order: 2;
+          a {
+            color: $blue;
+            text-decoration: underline;
+          }
+          span {
+            i { margin-right: .5em;}
+          }
+        }
+        .crud {
+          display: flex;
+          order: 2;
+          gap: 1em;
+          margin-bottom: 1em;
+          .btn {
+            width: fit-content;
+            min-width: 100px;
+            border: 1px solid transparent;
+            color: $white;
+            padding: .5em 1em;
+            display: flex;
+            align-items: last baseline;
+            font-size: 1.6rem;
+            cursor: pointer;
+            transition: all .15s ease;
+            border-radius: 30px;
+
+            i {margin-right: .5em;}
+
+            &--edit {
+              background-color: rgb(215, 148, 25);
+
+              &:hover, &:focus-visible {
+                background-color: rgb(252, 165, 3);
+              }
+            }
+
+            &--delete { 
+              background-color: rgb(186, 18, 18); 
+
+              &:hover, &:focus-visible {
+                background-color: rgb(211, 62, 62);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
