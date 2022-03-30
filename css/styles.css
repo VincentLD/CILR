@@ -1937,4 +1937,26 @@ p {
   background-color: #d33e3e;
 }
 
+.single .wrapper .single__content .content__left .btn {
+  width: fit-content;
+  min-width: 100px;
+  border: 1px solid transparent;
+  color: #fff !important;
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: last baseline;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border-radius: 30px;
+}
+.single .wrapper .single__content .content__left .btn--download {
+  text-decoration: none !important;
+  color: #fff;
+  background-color: #115d8c;
+}
+.single .wrapper .single__content .content__left .btn--download:hover, .single .wrapper .single__content .content__left .btn--download:focus-visible {
+  background-color: #1472ac;
+}
+
 /*# sourceMappingURL=styles.css.map */

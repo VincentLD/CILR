@@ -1,0 +1,31 @@
+.single {
+  .wrapper {
+    .single__content {
+      .content__left {
+        .btn {
+          width: fit-content;
+          min-width: 100px;
+          border: 1px solid transparent;
+          color: $white !important;
+          padding: .5em 1em;
+          display: flex;
+          align-items: last baseline;
+          font-size: 1.6rem;
+          cursor: pointer;
+          transition: all .15s ease;
+          border-radius: 30px;
+
+          &--download {
+            text-decoration: none !important;
+            color: $white;
+            background-color: $blue;
+
+            &:hover, &:focus-visible {
+              background-color: #1472ac;
+            }
+          }
+        }
+      }
+    }
+  }
+}
