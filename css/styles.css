@@ -1719,11 +1719,15 @@ p {
   padding: 0.5em 0.8em;
   border-radius: 20px;
   display: block;
-  margin: auto;
+  margin-left: auto;
   width: fit-content;
+  transition: all 0.15s ease;
 }
 .espace-membre main .actu__content--active .card .card__content .btn-edit i {
   margin-right: 0.7em;
+}
+.espace-membre main .actu__content--active .card .card__content .btn-edit:hover, .espace-membre main .actu__content--active .card .card__content .btn-edit:focus-visible {
+  background-color: #f4b23f;
 }
 .espace-membre main .actu__content--active figure {
   width: 45%;
