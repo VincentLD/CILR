@@ -972,6 +972,7 @@ p {
 }
 .actu main {
   margin-bottom: 2em;
+  min-height: calc(38vh - 4em);
 }
 .actu main .actu__content {
   display: none;
