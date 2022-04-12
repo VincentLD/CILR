@@ -1,14 +1,14 @@
 .page-introuvable {
 	.header-subpages {
-		margin-bottom: 4em;
+		margin-bottom: 10em;
 	}
 
 	.wrapper {
-		img {
-			margin-bottom: 2em;
-			max-width: 460px;
-			margin: auto;
-			display: block;
+		p {
+			text-align: center;
+			font-size: 10em;
+			margin-bottom: 0.5em;
+			color: $red;
 		}
 		h3 {
 			text-align: center;
